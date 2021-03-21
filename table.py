@@ -1,5 +1,3 @@
-from IPython.display import Markdown as md
-
 def show_table(header,datas,format=None):
   cols = len(header)
   header = "|" + "|".join(header) + "|"
