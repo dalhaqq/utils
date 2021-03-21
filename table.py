@@ -16,4 +16,4 @@ def show_table(header,datas,format=None):
     data = [str(x) for x in data]
     table += "|" + "|".join(data) + "|"
     table += "\n"
-  md(table)
+  return table
