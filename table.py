@@ -13,6 +13,7 @@ def show_table(header,datas,format=None):
   table += format
   table += "\n"
   for data in datas:
+    data = [str(x) for x in data]
     table += "|" + "|".join(data) + "|"
     table += "\n"
   md(table)
