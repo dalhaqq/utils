@@ -4,7 +4,10 @@ def show_table(header,datas,format=None):
   cols = len(header)
   header = "|" + "|".join(header) + "|"
   if format == None:
-    format = "|" + "|".join(["---" for col in range(0,cols)]) + "|"
+    format = []
+    for col in range(cols):
+      format.append("---")
+  format = "|" + "|".join(format) + "|"
   table = header
   table += "\n"
   table += format
